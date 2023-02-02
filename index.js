@@ -137,6 +137,7 @@ AFRAME.registerComponent('potree-loader', {
 
   _updatePointCloud: function (pco) {
     const data = this.data;
+    console.log(pco.material);
     pco.material.size = data.pointSize;
 
     pco.material.pointColorType = PointColorType[data.pointColorType.toUpperCase()];
